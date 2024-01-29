@@ -248,5 +248,6 @@ codeInputs.forEach((input, index) => {
 
         // Check the TCPA checkbox when the modal is shown
         tcpaCheckbox.checked = true;
+        validatePhoneNumber();
     });
    }
