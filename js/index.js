@@ -19,24 +19,24 @@ function toggleDisplay(ids) {
 }
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
-(() => {
-    'use strict'
+(function () {
+    'use strict';
 
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    const forms = document.querySelectorAll('.needs-validation')
+    var forms = document.querySelectorAll('.needs-validation');
 
     // Loop over them and prevent submission
-    Array.from(forms).forEach(form => {
-        form.addEventListener('submit', event => {
-            if (!form.checkValidity()) {
-                event.preventDefault()
-                event.stopPropagation()
+    for (var i = 0; i < forms.length; i++) {
+        forms[i].addEventListener('submit', function (event) {
+            if (!this.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
             }
 
-            form.classList.add('was-validated')
-        }, false)
-    })
-})()
+            this.classList.add('was-validated');
+        }, false);
+    }
+})();
 
 function initializeLocalStorageAndElements() {
     // Define the values to check and set in local storage
@@ -87,7 +87,7 @@ function updateForm1LocalStorage() {
     var form1EX = document.getElementById("form1EX").value;
 
     // Update local storage with the values from form1
-    if (form1AX, form1BX, form1CX, form1DX, form1EX) {
+    if (form1AX && form1BX && form1CX && form1DX && form1EX) {
         localStorage.setItem("form1A", form1AX);
         localStorage.setItem("form1B", form1BX);
         localStorage.setItem("form1C", form1CX);
@@ -99,7 +99,6 @@ function updateForm1LocalStorage() {
         document.getElementById("form1C").innerText = form1CX;
         document.getElementById("form1D").innerText = form1DX;
         document.getElementById("form1E").innerText = form1EX;
-
     }
 }
 
@@ -109,7 +108,7 @@ function updateForm2LocalStorage() {
     var form2BX = document.getElementById("form2BX").value;
     var form2CX = document.getElementById("form2CX").value;
     // Update local storage with the values from form2
-    if (form2AX, form2BX, form2CX) {
+    if (form2AX && form2BX && form2CX) {
         localStorage.setItem("form2A", form2AX);
         localStorage.setItem("form2B", form2BX);
         localStorage.setItem("form2C", form2CX);
@@ -185,16 +184,16 @@ var phoneNumber = document.getElementById("phoneNumber");
 var tcpa = document.getElementById("tcpa");
 if (phoneNumber && typeof phoneNumber !== "undefined") {
     phoneNumber.addEventListener("input", function () {
-        validatePhoneNumber()
-    })
+        validatePhoneNumber();
+    });
 }
 if (tcpa && typeof tcpa !== "undefined") {
     tcpa.addEventListener("change", function () {
-        validatePhoneNumber()
-    })
+        validatePhoneNumber();
+    });
 }
 
-// Apply input masks
+// Apply input masks using jQuery (ES5-compatible)
 $(document).ready(function () {
     $('#form1EX').mask('99999');
 });
@@ -211,18 +210,20 @@ $(document).ready(function () {
     $('#phoneNumber').mask('(000) 000-0000');
 });
 
-const codeInputs = Array.from(document.querySelectorAll('.codeInput'));
-const codeSubmitButton = document.getElementById('codeSubmitButton');
+var codeInputs = Array.from(document.querySelectorAll('.codeInput'));
+var codeSubmitButton = document.getElementById('codeSubmitButton');
 
-codeInputs.forEach((input, index) => {
-    input.addEventListener('input', () => {
+codeInputs.forEach(function (input, index) {
+    input.addEventListener('input', function () {
         if (input.value !== '') {
             if (index < codeInputs.length - 1) {
                 codeInputs[index + 1].focus();
             }
         }
 
-        if (codeInputs.every(input => input.value !== '')) {
+        if (codeInputs.every(function (input) {
+            return input.value !== '';
+        })) {
             codeSubmitButton.disabled = false;
         } else {
             codeSubmitButton.disabled = true;
@@ -230,19 +231,18 @@ codeInputs.forEach((input, index) => {
     });
 });
 
-  // Add an event listener for when the modal is shown
-  $('#modal002').on('shown.bs.modal', function () {
+// Add an event listener for when the modal is shown using jQuery
+$('#modal002').on('shown.bs.modal', function () {
     // Focus on #codeInput1 when the modal is shown
     $('#codeInput1').focus();
-  });
+});
 
+// Get a reference to the modal element
+var modalTCPA = document.getElementById('modalTCPA');
 
-    // Get a reference to the modal element
-    var modalTCPA = document.getElementById('modalTCPA');
-
-   if (modalTCPA && typeof modalTCPA !== "undefined") {
-     // Listen for the 'shown.bs.modal' event on the modal element
-     modalTCPA.addEventListener('shown.bs.modal', function () {
+if (modalTCPA && typeof modalTCPA !== "undefined") {
+    // Listen for the 'shown.bs.modal' event on the modal element
+    modalTCPA.addEventListener('shown.bs.modal', function () {
         // Get a reference to the TCPA checkbox element
         var tcpaCheckbox = document.getElementById('tcpa');
 
@@ -250,4 +250,4 @@ codeInputs.forEach((input, index) => {
         tcpaCheckbox.checked = true;
         validatePhoneNumber();
     });
-   }
+}
