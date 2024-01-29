@@ -202,29 +202,34 @@ img.credit {
   overflow-y: auto;
   height: 100%;
   max-height: 300px;
-  @media screen and (max-width: 575px) {
-    max-height: calc(100vh - 16rem);
-  }
 }
-/* width */
+/* WebKit-based browsers (e.g., Safari) */
 #terms::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
 #terms::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
-/* Handle */
 #terms::-webkit-scrollbar-thumb {
   background: #92c039;
 }
 
-/* Handle on hover */
 #terms::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+/* Standard scrollbar styling for non-WebKit browsers */
+#terms {
+  scrollbar-width: thin; /* for Firefox and Edge */
+  scrollbar-color: #92c039 #f1f1f1; /* thumb and track color for Firefox */
+}
+
+#terms:hover {
+  scrollbar-color: #555 #f1f1f1; /* thumb and track color on hover for Firefox */
+}
+
 .text-light-2 {
   color: rgb(167, 170, 175);
 }
@@ -260,7 +265,7 @@ img.credit {
 .modal-dialog,
 .modal-content {
   @media screen and (max-width: 575px) {
-    height: 100vh;
+    height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
   }
