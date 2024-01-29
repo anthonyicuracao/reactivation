@@ -235,3 +235,18 @@ codeInputs.forEach((input, index) => {
     // Focus on #codeInput1 when the modal is shown
     $('#codeInput1').focus();
   });
+
+
+    // Get a reference to the modal element
+    var modalTCPA = document.getElementById('modalTCPA');
+
+   if (modalTCPA && typeof modalTCPA !== "undefined") {
+     // Listen for the 'shown.bs.modal' event on the modal element
+     modalTCPA.addEventListener('shown.bs.modal', function () {
+        // Get a reference to the TCPA checkbox element
+        var tcpaCheckbox = document.getElementById('tcpa');
+
+        // Check the TCPA checkbox when the modal is shown
+        tcpaCheckbox.checked = true;
+    });
+   }

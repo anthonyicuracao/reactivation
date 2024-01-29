@@ -18,7 +18,54 @@
 
 <body>
 
-      <!-- Scenario 001A Modal START -->
+        <!-- TCPA Modal START -->
+  <div class="modal" id="modalTCPA" tabindex="-1" aria-labelledby="modalTCPALabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="bg-primary modal-header">
+          <button data-bs-target="#modal1" data-bs-toggle="modal" type="button" class="btn-back"
+            aria-label="Back"></button>
+          <img class="credit" src="../img/credit.svg" alt="Curacao | Credit" />
+          <button data-bs-target="#modal1" data-bs-toggle="modal" type="button" class="btn-close"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 text-center">
+                <h5 id="modal3Label" class="fw-bold mb-3 mt-1">
+                  TCPA
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div id="home1" class="col-12 px-0">
+                <div class="container-fluid px-0">
+                  <div class="row">
+                    <div class="col-12">
+                      <div id="terms">
+                        <p class="mb-0">
+                          Communicating with Curacao: I hereby expressly consent to receive future calls including
+                          pre-recorded messages, emails or text messages (concerning, for example, sales or other
+                          special offers) by or on behalf of Curacao at the number Curacao has on file for me at the
+                          time of the call. I understand that my signing this consent is completely voluntary and is not
+                          a condition for purchasing any good or service from Curacao.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- TCPA Modal END -->
+  <!-- Scenario 001A Modal START -->
       <div class="modal" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
         <form id="form3" class="row g-0 m-0 needs-validation" novalidate>
           <div class="modal-dialog">
@@ -62,8 +109,7 @@
                         <input checked="" class="form-check-input" type="checkbox" value="" id="tcpa" checked>
                         <label class="ps-2 form-check-label" for="tcpa">
                           I agree to receive future calls or text messages. Opt-in to Curacao receive important
-                          notifications. <a target="_blank" href="https://icuracao.com/terms/" class="text-info">Read
-                            TCPA</a>.
+                          notifications. <button type="button" data-bs-target="#modalTCPA" data-bs-toggle="modal" class="text-info bg-white border-0 p-0">Read TCPA</button>.
                         </label>
                       </div>
                     </div>
