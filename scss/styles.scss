@@ -242,6 +242,7 @@ img.credit {
   border: 1px solid rgb(134, 141, 154);
   color: rgb(102, 102, 102);
   width: 37px;
+
   @media screen and (min-width: 768px) {
     width: 40px;
   }
@@ -252,6 +253,11 @@ img.credit {
   text-align: center;
   border: 1px solid inherit;
   border-radius: 5px;
+  padding-right: 0;
+  text-align: center;
+  padding-inline-start: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .codeInput:focus-within,
 .codeInput:active,
