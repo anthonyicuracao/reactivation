@@ -230,7 +230,11 @@ codeInputs.forEach(function (input, index) {
         }
     });
 });
-
+// Add an event listener for when the modal is shown using jQuery
+$('#modal1').on('shown.bs.modal', function () {
+    // Focus on #codeInput1 when the modal is shown
+    $('#phoneNumber').focus();
+});
 // Add an event listener for when the modal is shown using jQuery
 $('#modal002').on('shown.bs.modal', function () {
     // Focus on #codeInput1 when the modal is shown
