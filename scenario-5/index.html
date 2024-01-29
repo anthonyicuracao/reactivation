@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preload" as="style" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="preload" as="style" href="../css/styles.css?">
+  <link rel="stylesheet" href="../css/styles.css?">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
   <meta name="description" content="Curacao caters its credit and other services specifically to the needs of the Hispanic community.">
@@ -19,14 +19,14 @@
 <body>
       <!-- Scenario 001A Modal START -->
       <div class="modal" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
-        <form id="form3" class="row g-3 needs-validation" novalidate>
+        <form id="form3" class="row g-0 m-0 needs-validation" novalidate>
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="bg-primary modal-header">
-                <button onclick="window.location.href='/reactivation''" type="button" class="btn-back"
+                <button onclick="window.location.href='/reactivation'" type="button" class="btn-back"
                   aria-label="Back"></button>
                 <img class="credit" src="../img/credit.svg" alt="Curacao | Credit" />
-                <button onclick="window.location.href='/reactivation''" type="button" class="btn-close"
+                <button onclick="window.location.href='/reactivation'" type="button" class="btn-close"
                   aria-label="Close"></button>
                 <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
               </div>
@@ -84,7 +84,7 @@
                       </p>
                     </div>
                     <div class="col-12 d-flex justify-content-center">
-                      <button onclick="window.location.href='/reactivation''" type="button"
+                      <button onclick="window.location.href='/reactivation'" type="button"
                         class="p-0 bg-white text-info border-0">Cancel and go back</button>
                       <!-- <button type="button" class="btn btn-light rounded-pill mb-2 mw-btn" data-bs-dismiss="modal">
                       No, go back
@@ -107,7 +107,7 @@
                 <button data-bs-target="#modal1" data-bs-toggle="modal" type="button" class="btn-back"
                   aria-label="Back"></button>
                 <img class="credit" src="../img/credit.svg" alt="Curacao | Credit" />
-                <button onclick="window.location.href='/reactivation''" type="button" class="btn-close"
+                <button onclick="window.location.href='/reactivation'" type="button" class="btn-close"
                   aria-label="Close"></button>
                 <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
               </div>
@@ -168,10 +168,10 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="bg-primary modal-header">
-          <button onclick="window.location.href='/reactivation''" type="button" class="btn-back"
+          <button onclick="window.location.href='/reactivation'" type="button" class="btn-back"
             aria-label="Back"></button>
           <img class="credit" src="../img/credit.svg" alt="Curacao | Credit" />
-          <button onclick="window.location.href='/reactivation''" type="button" class="btn-close"
+          <button onclick="window.location.href='/reactivation'" type="button" class="btn-close"
             aria-label="Close"></button>
           <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
@@ -210,7 +210,7 @@
                 </button>
               </div>
               <div class="col-12 d-flex justify-content-center">
-                <button onclick="window.location.href='/reactivation''" type="button"
+                <button onclick="window.location.href='/reactivation'" type="button"
                   class="btn btn-light rounded-pill mb-2 mw-btn">No, go back</button>
                 <!-- <button type="button" class="btn btn-light rounded-pill mb-2 mw-btn" data-bs-dismiss="modal">
                   No, go back
@@ -231,7 +231,7 @@
           <button data-bs-target="#modal1Z" data-bs-toggle="modal" type="button" class="btn-back"
             aria-label="Back"></button>
           <img class="credit" src="../img/credit.svg" alt="Curacao | Credit" />
-          <button onclick="window.location.href='/reactivation''" type="button" class="btn-close"
+          <button onclick="window.location.href='/reactivation'" type="button" class="btn-close"
             aria-label="Close"></button>
           <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
@@ -267,9 +267,9 @@
               </div>
               <div id="home2" class="col-12 px-0" style="display: none;">
                 <h6 class="fw-bold mb-3">Update your home address</h6>
-                <form id="form1" class="row g-3 needs-validation" novalidate>
+                <form id="form1" class="row needs-validation" novalidate>
                   <!-- Address START -->
-                  <div class="col-12">
+                  <div class="col-12 mb-2">
                     <div class="input-group has-validation">
                       <div class="form-floating">
                         <input type="text" class="form-control" id="form1AX" placeholder="" value="" required>
@@ -282,7 +282,7 @@
                   </div>
                   <!-- Address END -->
                   <!-- Apt / Suite # START -->
-                  <div class="col-12">
+                  <div class="col-12 mb-2">
                     <div class="input-group has-validation">
                       <div class="form-floating">
                         <input type="text" class="form-control" id="form1BX" placeholder="" value="" required>
@@ -295,7 +295,7 @@
                   </div>
                   <!-- Apt / Suite # END -->
                   <!-- City START -->
-                  <div class="col-12">
+                  <div class="col-12 mb-2">
                     <div class="input-group has-validation">
                       <div class="form-floating">
                         <input type="text" class="form-control" id="form1CX" placeholder="" value="" required>
@@ -308,7 +308,7 @@
                   </div>
                   <!-- City END -->
                   <!-- State START -->
-                  <div class="col-12">
+                  <div class="col-12 mb-2">
                     <div class="input-group has-validation">
                       <div class="form-floating">
                         <select class="form-select" id="form1DX" required>
@@ -338,7 +338,7 @@
                     </div>
                   </div>
                   <!-- Zip Code END -->
-                  <div class="col-12 d-flex justify-content-center">
+                  <div class="col-12 mb-3 d-flex justify-content-center">
                     <button class="btn btn-secondary rounded-pill text-white mt-3 mw-btn" type="submit">
                       Update address
                     </button>
@@ -386,9 +386,9 @@
               </div>
               <div id="work2" class="border-bottom pb-3 col-12 px-0" style="display: none;">
                 <h6 class="fw-bold my-3">Update your employment information</h6>
-                <form id="form2" class="row g-3 needs-validation" novalidate>
+                <form id="form2" class="row needs-validation" novalidate>
                   <!-- Work company name START -->
-                  <div class="col-12">
+                  <div class="col-12 mb-2">
                     <div class="input-group has-validation">
                       <div class="form-floating">
                         <input type="text" class="form-control" id="form2AX" placeholder="" value="" required>
@@ -401,7 +401,7 @@
                   </div>
                   <!-- Work company name END -->
                   <!-- Work phone number START -->
-                  <div class="col-12">
+                  <div class="col-12 mb-2">
                     <div class="input-group has-validation">
                       <div class="form-floating">
                         <input type="text" class="form-control" id="form2BX" placeholder="" value="" required>
@@ -426,7 +426,7 @@
                     </div>
                   </div>
                   <!-- Monthly gross income END -->
-                  <div class="col-12 d-flex justify-content-center">
+                  <div class="col-12 mb-3 d-flex justify-content-center">
                     <button class="btn btn-secondary rounded-pill text-white mt-3 mw-btn" type="submit">
                       Update employment
                     </button>
@@ -474,7 +474,7 @@
           <button data-bs-target="#modal1Z" data-bs-toggle="modal" type="button" class="btn-back"
             aria-label="Back"></button>
           <img class="credit" src="../img/credit.svg" alt="Curacao | Credit" />
-          <button onclick="window.location.href='/reactivation''" type="button" class="btn-close"
+          <button onclick="window.location.href='/reactivation'" type="button" class="btn-close"
             aria-label="Close"></button>
           <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
         </div>
@@ -494,7 +494,7 @@
                 <div class="container-fluid px-0">
                   <div class="row">
                     <div class="col-12">
-                      <div id="termsDiv">
+                      <div id="terms">
                         <p class="mb-0">
                           By accepting these Terms and Conditions through your use of the Site, you certify that you are
                           18 years of age or older. If you are under the age of 18 but at least 13 years of age you may
@@ -547,7 +547,7 @@
             <div class="row">
               <div class="col-12 d-flex justify-content-center">
                 <div>
-                  <button onclick="window.location.href='/reactivation''" type="button"
+                  <button onclick="window.location.href='/reactivation'" type="button"
                     class="btn btn-secondary rounded-pill text-white mb-3 mw-btn">
                     Accept and Submit
                   </button>

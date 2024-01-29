@@ -56,8 +56,9 @@ $btn-close-width: 2em;
 $btn-close-padding-x: 0;
 $btn-close-opacity: 1;
 $btn-close-hover-opacity: 1;
+$modal-dialog-margin: 0;
 $focus-ring-width: 0;
-$font-size-base: 0.9rem;
+// $font-size-base: 0.9rem;
 $font-family-sans-serif: Montserrat, Arial, sans-serif;
 $font-family-monospace: Montserrat, Arial, sans-serif;
 $input-btn-padding-y: 0.625rem;
@@ -196,29 +197,32 @@ img.credit {
     box-sizing: border-box;
   }
 }
-#termsDiv {
+#terms {
   overflow-x: hidden;
   overflow-y: auto;
   height: 100%;
   max-height: 300px;
+  @media screen and (max-width: 575px) {
+    max-height: calc(100vh - 16rem);
+  }
 }
 /* width */
-#termsDiv::-webkit-scrollbar {
+#terms::-webkit-scrollbar {
   width: 10px;
 }
 
 /* Track */
-#termsDiv::-webkit-scrollbar-track {
+#terms::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
 /* Handle */
-#termsDiv::-webkit-scrollbar-thumb {
+#terms::-webkit-scrollbar-thumb {
   background: #92c039;
 }
 
 /* Handle on hover */
-#termsDiv::-webkit-scrollbar-thumb:hover {
+#terms::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 .text-light-2 {
@@ -232,20 +236,14 @@ img.credit {
 .codeInput {
   border: 1px solid rgb(134, 141, 154);
   color: rgb(102, 102, 102);
-  width: 30px;
-  @media screen and (min-width: 340px) and (max-width: 369px) {
-    width: 32px;
-  }
-  @media screen and (min-width: 370px) {
-    width: 34px;
-  }
+  width: 37px;
   @media screen and (min-width: 768px) {
     width: 40px;
   }
   height: 60px;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
-  margin: 4px;
+  margin: 0;
   text-align: center;
   border: 1px solid inherit;
   border-radius: 5px;
@@ -257,4 +255,13 @@ img.credit {
   border: 1px solid rgb(149, 201, 79) !important;
   outline: none !important;
   box-shadow: none;
+}
+
+.modal-dialog,
+.modal-content {
+  @media screen and (max-width: 575px) {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
 }
