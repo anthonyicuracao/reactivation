@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="105" viewBox="0 0 110 105">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1797" data-name="Rectangle 1797" width="103.667" height="100.419" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-done-check-circle">
+      <rect width="110" height="105"/>
+    </clipPath>
+  </defs>
+  <g id="done-check-circle" clip-path="url(#clip-done-check-circle)">
+    <g id="Group_4687" data-name="Group 4687" transform="translate(0 0.333)">
+      <g id="Group_1047" data-name="Group 1047" clip-path="url(#clip-path)">
+        <path id="Path_1037" data-name="Path 1037" d="M80,86.2a6.093,6.093,0,0,1-4.337-1.8L56.631,65.374A6.132,6.132,0,1,1,65.3,56.7L80,71.4l44.56-44.559a6.132,6.132,0,1,1,8.672,8.672L84.332,84.4A6.084,6.084,0,0,1,80,86.2" transform="translate(-31.358 -14.319)" fill="#39b54a"/>
+        <path id="Path_1038" data-name="Path 1038" d="M91.043,39.576A42.289,42.289,0,1,1,78.875,19.282l5.67-5.67a50.063,50.063,0,1,0,12.9,19.565Z" transform="translate(0 -0.001)" fill="#414042"/>
+      </g>
+    </g>
+  </g>
+</svg>

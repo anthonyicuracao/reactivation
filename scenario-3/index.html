@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" as="style" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  <meta name="description" content="Curacao caters its credit and other services specifically to the needs of the Hispanic community.">
+  <meta name="keywords" content="Curacao Financial Services, credit card, financing, Hispanic, Latino immigrants to get credit, first credit">
+  <meta name="theme-color" content="#95c94f">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+  <title>Curacao | Credit Scenario #6</title>
+</head>
+
+<body>
+      <!-- Scenario 001A Modal START -->
+      <div class="modal" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+        <form id="form3" class="row g-3 needs-validation" novalidate>
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="bg-primary modal-header">
+                <button onclick="window.location.href='/index.html'" type="button" class="btn-back"
+                  aria-label="Back"></button>
+                <img class="credit" src="../img/credit.svg" alt="Curacao | Credit" />
+                <button onclick="window.location.href='/index.html'" type="button" class="btn-close"
+                  aria-label="Close"></button>
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12 text-center">
+                      <h5 id="modal1ZLabel" class="fw-bold mb-3 mt-1">
+                        Let's confirm it's you.
+                      </h5>
+                      <p class="text-muted mb-3">
+                        Please enter the cell phone number you used to create your Curacao credit account.
+                      </p>
+    
+                      <!-- Phone number START -->
+                      <div class="col-12 d-flex justify-content-start">
+                        <div class="input-group has-validation text-start">
+                          <div class="form-floating">
+                            <input type="text" class="form-control" id="phoneNumber" placeholder="" value="" required>
+                            <label for="phoneNumber" class="form-label">Enter cell phone number</label>
+                            <div class="invalid-feedback">
+                              Enter a valid phone number...
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Phone number END -->
+                      <p class="mt-3 text-muted">New number? <a class="text-info" target="_blank"
+                          href="https://myaccount.icuracao.com/">Update your account.</a></p>
+    
+                      <div class="form-check text-muted text-start mt-3">
+                        <input checked="" class="form-check-input" type="checkbox" value="" id="tcpa" checked>
+                        <label class="ps-2 form-check-label" for="tcpa">
+                          I agree to receive future calls or text messages. Opt-in to Curacao receive important
+                          notifications. <a target="_blank" href="https://icuracao.com/terms/" class="text-info">Read
+                            TCPA</a>.
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer border-0 pt-0">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                      <button disabled="" type="button" data-bs-target="#modal002" data-bs-toggle="modal"
+                        class="btn btn-secondary rounded-pill text-white mb-3 mw-btn">
+                        Get a code
+                      </button>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                      <p class="text-muted mb-2">
+                        We'll send you a verification code via SMS
+                      </p>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                      <button onclick="window.location.href='/index.html'" type="button"
+                        class="p-0 bg-white text-info border-0">Cancel and go back</button>
+                      <!-- <button type="button" class="btn btn-light rounded-pill mb-2 mw-btn" data-bs-dismiss="modal">
+                      No, go back
+                    </button> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Scenario 001A Modal END -->
+      <!-- Scenario 002A Modal START -->
+      <div class="modal" id="modal002" tabindex="-1" aria-labelledby="modal002Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <form id="codeForm">
+            <div class="modal-content">
+              <div class="bg-primary modal-header">
+                <button data-bs-target="#modal1" data-bs-toggle="modal" type="button" class="btn-back"
+                  aria-label="Back"></button>
+                <img class="credit" src="../img/credit.svg" alt="Curacao | Credit" />
+                <button onclick="window.location.href='/index.html'" type="button" class="btn-close"
+                  aria-label="Close"></button>
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12 text-center">
+                      <h5 class="fw-bold mb-3 mt-1">
+                        Confirm your mobile
+                      </h5>
+                      <p class="text-muted">
+                        Enter the SMS verification code we sent to
+                      </p>
+                      <h6 class="mb-3 fw-bold">(213) 400-7660</h6>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                      <div>
+                        <input class="codeInput" type="text" maxlength="1" required autofocus>
+                        <input class="codeInput" type="text" maxlength="1" required>
+                        <input class="codeInput" type="text" maxlength="1" required>
+                        <input class="codeInput" type="text" maxlength="1" required>
+                        <input class="codeInput" type="text" maxlength="1" required>
+                        <input class="codeInput" type="text" maxlength="1" required>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer pt-0 border-0">
+                <div class="container-fluid">
+                  <div class="row mb-3">
+                    <div class="col-12 d-flex justify-content-center">
+                      <button type="button" class="border-0 bg-white p-0 text-info">
+                        Resend SMS code
+                      </button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                      <button id="codeSubmitButton" disabled="" type="button" data-bs-target="#modal1Z"
+                        data-bs-toggle="modal" class="btn btn-secondary rounded-pill text-white mb-3 mw-btn">
+                        Continue
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Scenario 002A Modal END -->
+  
+  <!-- Scenario 6A Modal START -->
+  <div class="modal" id="modal1Z" tabindex="-1" aria-labelledby="modal1ZLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="bg-primary modal-header">
+          <button onclick="window.location.href='/index.html'" type="button" class="btn-back"
+            aria-label="Back"></button>
+          <img class="credit" src="../img/credit.svg" alt="Curacao | Credit" />
+          <button onclick="window.location.href='/index.html'" type="button" class="btn-close"
+            aria-label="Close"></button>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 text-center">
+                <h5 id="modal1ZLabel" class="fw-bold mb-3 mt-1">
+                  Hi John Doe,
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="border px-3 px-md-5 py-4 text-center rounded-2">
+            <div class="mb-3">
+              <img class="h-auto icon w-100" src="../img/error-fix-now-icon.svg" alt="ERROR..." />
+            </div>
+            <p class="text-muted">Please contact the Curacao Credit team at <a href="tel:1(800)990-3422" class="text-info">1 (800) 990-3422</a> or visit any <a href="https://icuracao.com/store-locator" class="text-info">Curacao store</a> for further assistance.<br>During business hours.</p>
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 text-center">
+                <h5 class="fw-bold mb-3">
+                  Would you like to proceed<br>with Curacao credit?
+                </h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center">
+                <a href="tel:1(800)990-3422" class="btn btn-secondary rounded-pill text-white mb-3 mw-btn">
+                  Call now
+                </a>
+              </div>
+              <div class="col-12 d-flex justify-content-center">
+                <button onclick="window.location.href='/index.html'" type="button"
+                  class="btn btn-light rounded-pill mb-2 mw-btn">No, go back</button>
+                <!-- <button type="button" class="btn btn-light rounded-pill mb-2 mw-btn" data-bs-dismiss="modal">
+                  No, go back
+                </button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Scenario 6B Modal END -->
+  <!-- Scenario 6B Modal START -->
+  <div class="modal" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="bg-primary modal-header">
+          <button data-bs-target="#modal1Z" data-bs-toggle="modal" type="button" class="btn-back"
+            aria-label="Back"></button>
+          <img class="credit" src="../img/credit.svg" alt="Curacao | Credit" />
+          <button onclick="window.location.href='/index.html'" type="button" class="btn-close"
+            aria-label="Close"></button>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 text-center">
+                <h5 id="modal2Label" class="fw-bold mb-3 mt-1">
+                  To continue, please review and update your account info.
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div id="home1" class="col-12 px-0">
+                <div class="container-fluid px-0">
+                  <div class="row">
+                    <div class="col">
+                      <h6 class="fw-bold mb-0">Home Address</h6>
+                    </div>
+                    <div class="col-auto">
+                      <button onclick="toggleDisplay(['home1', 'home2'])"
+                        class="text-info p-0 bg-white border-0">Edit</button>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  <span id="form1A"></span>
+                  <span id="form1B"></span><span>,</span><br>
+                  <span id="form1C"></span><span>, </span><span id="form1D"></span><span> </span><span id="form1E"></span>
+                </p>
+              </div>
+              <div id="home2" class="col-12 px-0" style="display: none;">
+                <h6 class="fw-bold mb-3">Update your home address</h6>
+                <form id="form1" class="row g-3 needs-validation" novalidate>
+                  <!-- Address START -->
+                  <div class="col-12">
+                    <div class="input-group has-validation">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="form1AX" placeholder="" value="" required>
+                        <label for="form1AX" class="form-label">Address</label>
+                        <div class="invalid-feedback">
+                          Enter a valid address...
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Address END -->
+                  <!-- Apt / Suite # START -->
+                  <div class="col-12">
+                    <div class="input-group has-validation">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="form1BX" placeholder="" value="" required>
+                        <label for="form1BX" class="form-label">Apt / Suite #</label>
+                        <div class="invalid-feedback">
+                          Enter a valid apt / suite #...
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Apt / Suite # END -->
+                  <!-- City START -->
+                  <div class="col-12">
+                    <div class="input-group has-validation">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="form1CX" placeholder="" value="" required>
+                        <label for="form1CX" class="form-label">City</label>
+                        <div class="invalid-feedback">
+                          Enter a valid city...
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- City END -->
+                  <!-- State START -->
+                  <div class="col-12">
+                    <div class="input-group has-validation">
+                      <div class="form-floating">
+                        <select class="form-select" id="form1DX" required>
+                          <option value="" disabled selected>Select a state</option>
+                          <option value="CA">CA</option>
+                          <option value="AZ">AZ</option>
+                          <option value="NV">NV</option>
+                        </select>
+                        <label for="form1DX" class="form-label">State</label>
+                        <div class="invalid-feedback">
+                          Please select a valid state...
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- State END -->
+                  <!-- Zip Code START -->
+                  <div class="col-12">
+                    <div class="input-group has-validation">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="form1EX" placeholder="" value="" required>
+                        <label for="form1EX" class="form-label">Zip Code</label>
+                        <div class="invalid-feedback">
+                          Enter a valid zip code...
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Zip Code END -->
+                  <div class="col-12 d-flex justify-content-center">
+                    <button class="btn btn-secondary rounded-pill text-white mt-3 mw-btn" type="submit">
+                      Update address
+                    </button>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center">
+                    <button onclick="toggleDisplay(['home1', 'home2'])" class="btn btn-light rounded-pill mw-btn"
+                      type="button">Cancel</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="row border-top mt-3 py-3">
+              <div class="col-12 px-0">
+                <div class="container-fluid px-0">
+                  <div class="row">
+                    <div class="col">
+                      <h6 class="fw-bold mb-0 text-light-2">Contact Information</h6>
+                    </div>
+                  </div>
+                </div>
+                <p class="mt-2 text-light-2">Email address:<br><strong>johndoe@gmail.com</strong></p>
+                <p class="mt-2 text-light-2">Cellphone number:<br><strong>(213) 123-4567</strong></p>
+                <p class="mt-2 small fst-italic text-muted">NOTE: To change email address and/or phone number you need
+                  to <a class="text-info" target="_blank" href="https://icuracao.com/store-locator">visit us</a> or call
+                  <a href="tel:1 (800) 990-3422" class="text-info">1 (800) 990-3422</a>
+                </p>
+              </div>
+            </div>
+            <div class="row border-top">
+              <div id="work1" class="col-12 px-0">
+                <div class="container-fluid px-0">
+                  <div class="row mt-3">
+                    <div class="col">
+                      <h6 class="fw-bold mb-0">Employment Information</h6>
+                    </div>
+                    <div class="col-auto">
+                      <button onclick="toggleDisplay(['work1', 'work2'])"
+                        class="text-info p-0 bg-white border-0">Edit</button>
+                    </div>
+                  </div>
+                </div>
+                <p>Work company name: <span id="form2A"></span></p>
+                <p>Work phone number: <span id="form2B"></span></p>
+                <p>Monthly gross income: <span id="form2C"></span></p>
+              </div>
+              <div id="work2" class="border-bottom pb-3 col-12 px-0" style="display: none;">
+                <h6 class="fw-bold my-3">Update your employment information</h6>
+                <form id="form2" class="row g-3 needs-validation" novalidate>
+                  <!-- Work company name START -->
+                  <div class="col-12">
+                    <div class="input-group has-validation">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="form2AX" placeholder="" value="" required>
+                        <label for="form2AX" class="form-label">Work company name</label>
+                        <div class="invalid-feedback">
+                          Enter a valid company name...
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Work company name END -->
+                  <!-- Work phone number START -->
+                  <div class="col-12">
+                    <div class="input-group has-validation">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="form2BX" placeholder="" value="" required>
+                        <label for="form2BX" class="form-label">Work phone number</label>
+                        <div class="invalid-feedback">
+                          Enter a valid phone number...
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Work phone number END -->
+                  <!-- Monthly gross income START -->
+                  <div class="col-12">
+                    <div class="input-group has-validation">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="form2CX" placeholder="" value="" required>
+                        <label for="form2CX" class="form-label">Monthly gross income</label>
+                        <div class="invalid-feedback">
+                          Enter a valid monthly gross income...
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Monthly gross income END -->
+                  <div class="col-12 d-flex justify-content-center">
+                    <button class="btn btn-secondary rounded-pill text-white mt-3 mw-btn" type="submit">
+                      Update employment
+                    </button>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center">
+                    <button onclick="toggleDisplay(['work1', 'work2'])" class="btn btn-light rounded-pill mw-btn"
+                      type="button">Cancel</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center">
+                <div>
+                  <button data-bs-target="#modal3" data-bs-toggle="modal" type="button"
+                    class="btn btn-secondary rounded-pill text-white mb-3 mw-btn">
+                    Continue
+                  </button>
+                  <div>
+                    <p class="mb-0">
+                      <small class="fst-italic text-muted">
+                        I'll do it later, <a href="/index.html" class="text-info">Continue with Debit/Credit</a>
+                      </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Scenario 6B Modal END -->
+
+  <!-- Scenario 6C Modal START -->
+  <div class="modal" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="bg-primary modal-header">
+          <button data-bs-target="#modal1Z" data-bs-toggle="modal" type="button" class="btn-back"
+            aria-label="Back"></button>
+          <img class="credit" src="../img/credit.svg" alt="Curacao | Credit" />
+          <button onclick="window.location.href='/index.html'" type="button" class="btn-close"
+            aria-label="Close"></button>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 text-center">
+                <h5 id="modal3Label" class="fw-bold mb-3 mt-1">
+                  Curacao Credit Application Disclosures:
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div id="home1" class="col-12 px-0">
+                <div class="container-fluid px-0">
+                  <div class="row">
+                    <div class="col-12">
+                      <div id="termsDiv">
+                        <p class="mb-0">
+                          By accepting these Terms and Conditions through your use of the Site, you certify that you are
+                          18 years of age or older. If you are under the age of 18 but at least 13 years of age you may
+                          use this Site only under the supervision of a parent or legal guardian who agrees to be bound
+                          by
+                          these Terms and Conditions. iCuracao.com does not intentionally collect personal information
+                          about children under the age of 13. Children under the age of 13 may not use this Site and
+                          parents or legal guardians may not agree to these Terms and Conditions on their behalf. If you
+                          are a parent or legal guardian agreeing to these Terms and Conditions for the benefit of a
+                          child
+                          between the ages of 13 and 18, be advised that you are fully responsible for his or her use of
+                          this Site, including all financial charges and legal liability that he or she may incur. If
+                          you
+                          do not agree to (or cannot comply with) any of these Terms and Conditions, do not use this
+                          Site.
+                          All billing and registration information provided must be truthful and accurate. Providing any
+                          untruthful or inaccurate information may constitute a breach of these Terms and Conditions. By
+                          confirming your purchase at the end of the checkout process, you agree to accept and pay for
+                          the
+                          item(s) requested.
+                        </p>
+                        <p>
+                          All materials, including images, text, illustrations, designs, icons, photographs, programs,
+                          music clips or downloads, video clips and written and other materials that are part of this
+                          Site
+                          (collectively, the "Contents") are intended solely for personal, non-commercial use. You may
+                          download or copy the Contents and other downloadable materials displayed on the Site for your
+                          personal use only. No right, title or interest in any downloaded materials or software is
+                          transferred to you as a result of any such downloading or copying. You may not reproduce
+                          (except
+                          as noted above), publish, transmit, distribute, display, modify, create derivative works from,
+                          sell or participate in any sale of or exploit in any way, in whole or in part, any of the
+                          Contents, the Site or any related software. All software used on this Site is the property of
+                          iCuracao.com or its suppliers and protected by U.S. and international copyright laws. The
+                          Contents and software on this Site may be used only as a shopping resource. Any other use,
+                          including the reproduction, modification, distribution, transmission, republication, display,
+                          or
+                          performance, of the Contents on this Site is strictly prohibited.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center">
+                <div>
+                  <button onclick="window.location.href='/index.html'" type="button"
+                    class="btn btn-secondary rounded-pill text-white mb-3 mw-btn">
+                    Accept and Submit
+                  </button>
+                  <div>
+                    <p class="mb-0">
+                      <small class="fst-italic text-muted">
+                        I'll do it later, <a href="/index.html" class="text-info">Continue with Debit/Credit</a>
+                      </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Scenario 6C Modal END -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="../js/index.js?"></script>
+</body>
+
+</html>
