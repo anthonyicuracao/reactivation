@@ -41,14 +41,14 @@ function toggleDisplay(ids) {
 function initializeLocalStorageAndElements() {
     // Define the values to check and set in local storage
     var initialValues = {
-        form1A: "1605 West Olympic Boulevard",
+        form1A: "1605 West Olympic Blvd.",
         form1B: "Suite 805",
         form1C: "Los Angeles",
         form1D: "CA",
         form1E: "90015",
-        form2A: "Boeing",
+        form2A: "Curacao",
         form2B: "(213) 639-2100",
-        form2C: "$8,000.00"
+        form2C: "$1,000.00"
     };
 
     // Loop through the keys and values to check and set in local storage
