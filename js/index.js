@@ -229,3 +229,9 @@ codeInputs.forEach((input, index) => {
         }
     });
 });
+
+  // Add an event listener for when the modal is shown
+  $('#modal002').on('shown.bs.modal', function () {
+    // Focus on #codeInput1 when the modal is shown
+    $('#codeInput1').focus();
+  });
