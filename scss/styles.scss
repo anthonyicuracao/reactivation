@@ -1,38 +1,16 @@
 // Override Bootstrap's Sass default variables
 //
-// Nearly all variables in Bootstrap are written with the `!default` flag.
-// This allows you to override the default values of those variables before
-// you import Bootstrap's source Sass files.
-//
-// Overriding the default variable values is the best way to customize your
-// CSS without writing _new_ styles. For example, you can either change
-// `$body-color` or write more CSS that override's Bootstrap's CSS like so:
-// `body { color: red; }`.
-
-//
-// Bring in Bootstrap
-//
-
-// Option 1
-//
-// Import all of Bootstrap's CSS
-
-// @import "bootstrap/scss/bootstrap";
-
-// Option 2
-//
-// Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
 
 // Toggle global options
 $enable-validation-icons: false;
 $enable-deprecation-messages: false;
 
-// $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
-
 // Include functions first
 @import "bootstrap/scss/functions";
 
 // Customize some defaults
+$grid-gutter-width: 2rem;
+$border-radius: 0.5rem;
 $primary: rgb(149, 201, 79);
 $secondary: rgb(255, 103, 31);
 $success: rgb(57, 181, 74);
@@ -49,16 +27,16 @@ $input-disabled-color: rgb(167, 170, 175);
 $input-color: rgb(102, 102, 102);
 $input-focus-color: rgb(64, 64, 64);
 $input-border-color: rgb(134, 141, 154);
-$border-radius: 0.5rem;
 $border-width: 1px;
 $btn-font-weight: 700;
 $btn-close-width: 2em;
 $btn-close-padding-x: 0;
 $btn-close-opacity: 1;
 $btn-close-hover-opacity: 1;
+$modal-footer-border-width: 0;
+$modal-footer-margin-between: 0;
 $modal-dialog-margin: 0;
 $focus-ring-width: 0;
-// $font-size-base: 0.9rem;
 $font-family-sans-serif: Montserrat, Arial, sans-serif;
 $font-family-monospace: Montserrat, Arial, sans-serif;
 $input-btn-padding-y: 0.625rem;
@@ -77,7 +55,6 @@ $btn-close-bg: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' 
 @import "bootstrap/scss/utilities";
 @import "bootstrap/scss/root";
 @import "bootstrap/scss/reboot";
-
 @import "bootstrap/scss/type";
 @import "bootstrap/scss/images";
 @import "bootstrap/scss/containers";
@@ -87,15 +64,8 @@ $btn-close-bg: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' 
 @import "bootstrap/scss/buttons";
 @import "bootstrap/scss/transitions";
 @import "bootstrap/scss/dropdown";
-// @import "bootstrap/scss/button-group";
-// @import "bootstrap/scss/nav";
-// @import "bootstrap/scss/navbar";
 @import "bootstrap/scss/card";
-// @import "bootstrap/scss/breadcrumb";
 @import "bootstrap/scss/accordion";
-// @import "bootstrap/scss/pagination";
-// @import "bootstrap/scss/badge";
-// @import "bootstrap/scss/alert";
 @import "bootstrap/scss/progress";
 @import "bootstrap/scss/list-group";
 @import "bootstrap/scss/close";
@@ -103,13 +73,6 @@ $btn-close-bg: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' 
 @import "bootstrap/scss/modal";
 @import "bootstrap/scss/tooltip";
 @import "bootstrap/scss/popover";
-// @import "bootstrap/scss/carousel";
-// @import "bootstrap/scss/spinners";
-// @import "bootstrap/scss/offcanvas";
-// @import "bootstrap/scss/placeholders";
-
-// Helpers
-// @import "bootstrap/scss/helpers";
 
 // Utilities
 @import "bootstrap/scss/utilities/api";
@@ -127,11 +90,14 @@ $btn-close-bg: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' 
   --curacao-red: rgb(210, 31, 51);
   --curacao-brown: rgb(125, 44, 43);
 }
+
 .fw-300 {
   font-weight: 300;
 }
+
 a.scenario {
   text-decoration: none !important;
+
   > div {
     background: rgb(248, 249, 205);
     line-height: 1.2;
@@ -141,13 +107,16 @@ a.scenario {
 img.credit {
   height: auto;
   max-width: 250px;
+
   @media screen and (max-width: 390px) {
     max-width: 200px;
   }
+
   width: 100%;
 }
-.lh-1 {
-  line-height: 1;
+
+.lh-1P2 {
+  line-height: 1.2;
 }
 
 @media screen and (max-width: 500px) {
@@ -155,20 +124,17 @@ img.credit {
     width: 100%;
   }
 }
-@media screen and (min-width: 501px) {
-  .mw-btn {
-    width: 100%;
-    max-width: 300px;
-  }
-}
+
 .icon {
   max-width: 75px;
 }
+
 @media screen and (max-width: 355px) {
   .d-none-br {
     display: none;
   }
 }
+
 .btn-back {
   -webkit-appearance: button;
   appearance: button;
@@ -191,17 +157,20 @@ img.credit {
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
+
   *::before,
   *::after {
     box-sizing: border-box;
   }
 }
+
 #terms {
   overflow-x: hidden;
   overflow-y: auto;
   height: 100%;
-  max-height: 300px;
+  max-height: 400px;
 }
+
 /* WebKit-based browsers (e.g., Safari) */
 #terms::-webkit-scrollbar {
   width: 10px;
@@ -221,12 +190,15 @@ img.credit {
 
 /* Standard scrollbar styling for non-WebKit browsers */
 #terms {
-  scrollbar-width: thin; /* for Firefox and Edge */
-  scrollbar-color: #92c039 #f1f1f1; /* thumb and track color for Firefox */
+  scrollbar-width: thin;
+  /* for Firefox and Edge */
+  scrollbar-color: #92c039 #f1f1f1;
+  /* thumb and track color for Firefox */
 }
 
 #terms:hover {
-  scrollbar-color: #555 #f1f1f1; /* thumb and track color on hover for Firefox */
+  scrollbar-color: #555 #f1f1f1;
+  /* thumb and track color on hover for Firefox */
 }
 
 .text-light-2 {
@@ -240,24 +212,25 @@ img.credit {
 .codeInput {
   border: 1px solid rgb(134, 141, 154);
   color: rgb(102, 102, 102);
-  width: 37px;
-
-  @media screen and (min-width: 768px) {
-    width: 40px;
-  }
+  width: 100%;
   height: 60px;
   font-size: 30px;
   font-weight: bold;
-  margin: 0;
   text-align: center;
-  border: 1px solid inherit;
-  border-radius: 5px;
+  border-radius: 0.25rem;
   padding-right: 0;
   text-align: center;
   padding-inline-start: 0;
   padding-top: 0;
   padding-bottom: 0;
 }
+
+@media screen and (min-width: 501px) {
+  .mw-btn {
+    width: 300px;
+  }
+}
+
 .codeInput:focus-within,
 .codeInput:active,
 .codeInput:focus {
@@ -275,3 +248,30 @@ img.credit {
     overflow-y: auto;
   }
 }
+
+.modal-body,
+.modal-footer {
+  padding: 0 !important;
+}
+
+.link-button {
+  padding: 0 !important;
+  background: white !important;
+  border: none !important;
+  color: rgb(23, 143, 253) !important;
+  text-decoration: underline;
+}
+
+.credit-info {
+  border: 1px solid rgb(182, 186, 193);
+  border-radius: 0;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+#form1 > .col-12,
+#form2 > .col-12 {
+  margin-bottom: 1rem;
+}
+
