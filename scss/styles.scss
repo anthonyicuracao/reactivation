@@ -9,6 +9,7 @@ $enable-deprecation-messages: false;
 @import "bootstrap/scss/functions";
 
 // Customize some defaults
+$line-height-base: 1.25;
 $grid-gutter-width: 2rem;
 $border-radius: 0.5rem;
 $primary: rgb(149, 201, 79);
@@ -114,11 +115,6 @@ img.credit {
 
   width: 100%;
 }
-
-.lh-1P2 {
-  line-height: 1.2;
-}
-
 @media screen and (max-width: 500px) {
   .mw-btn {
     width: 100%;
