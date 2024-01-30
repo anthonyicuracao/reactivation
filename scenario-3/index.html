@@ -18,137 +18,193 @@
 </head>
 
 <body>
-  <!-- TCPA Modal START -->
-  <div class="modal" id="modalTCPA" tabindex="-1" aria-labelledby="modalTCPALabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="bg-primary modal-header">
-          <button data-bs-target="#modal1" data-bs-toggle="modal" type="button" class="btn-back"
-            aria-label="Back"></button>
-          <img class="credit" src="../img/credit.svg" alt="Curacao | Credit" />
-          <button data-bs-target="#modal1" data-bs-toggle="modal" type="button" class="btn-close"
-            aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-12 text-center">
-                <h5 id="modal3Label" class="fw-bold mb-3 mt-1">
-                  TCPA
-                </h5>
+    <!-- TCPA Modal START -->
+    <div class="modal" id="modalTCPA" tabindex="-1" aria-labelledby="modalTCPALabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="bg-primary modal-header">
+            <button data-bs-target="#modal1" data-bs-toggle="modal" type="button" class="btn-back"
+              aria-label="Back"></button>
+            <img class="credit" src="../img/credit.svg" alt="Curacao | Credit" />
+            <button data-bs-target="#modal1" data-bs-toggle="modal" type="button" class="btn-close"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <h5 id="modal3Label" class="fw-bold mt-3 mb-2">
+                    TCPA
+                  </h5>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-12 px-0">
-                <div class="container-fluid px-0">
-                  <div class="row">
-                    <div class="col-12">
-                      <div id="terms">
-                        <p class="mb-0">
-                          Communicating with Curacao: I hereby expressly consent to receive future calls including
-                          pre-recorded messages, emails or text messages (concerning, for example, sales or other
-                          special offers) by or on behalf of Curacao at the number Curacao has on file for me at the
-                          time of the call. I understand that my signing this consent is completely voluntary and is not
-                          a condition for purchasing any good or service from Curacao.
-                        </p>
-                      </div>
-                    </div>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <div id="terms">
+                    <p>
+                      Communicating with Curacao: I hereby expressly consent to receive future calls including
+                      pre-recorded messages, emails or text messages (concerning, for example, sales or other
+                      special offers) by or on behalf of Curacao at the number Curacao has on file for me at the
+                      time of the call. I understand that my signing this consent is completely voluntary and is not
+                      a condition for purchasing any good or service from Curacao.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="modal-footer border-0 pt-0">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-12 d-flex justify-content-center">
-                <button type="button" data-bs-target="#modal1" data-bs-toggle="modal"
-                  class="btn btn-secondary rounded-pill text-white mb-3 mw-btn">
-                  Go back
-                </button>
+          <div class="modal-footer">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                  <button type="button" data-bs-target="#modal1" data-bs-toggle="modal"
+                    class="btn btn-secondary rounded-pill text-white my-3 mw-btn">
+                    Go back
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- TCPA Modal END -->
-  <!-- Scenario 001A Modal START -->
-      <div class="modal" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
-        <form id="form3" class="row g-0 m-0 needs-validation" novalidate>
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="bg-primary modal-header">
-                <button onclick="window.location.href='/reactivation'" type="button" class="btn-back"
-                  aria-label="Back"></button>
-                <img class="credit" src="../img/credit.svg" alt="Curacao | Credit" />
-                <button onclick="window.location.href='/reactivation'" type="button" class="btn-close"
-                  aria-label="Close"></button>
-                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-              </div>
-              <div class="modal-body">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-12 text-center">
-                      <h5 id="modal1ZLabel" class="fw-bold mb-3 mt-1">
-                        Let's confirm it's you.
-                      </h5>
-                      <p class="text-muted mb-3">
-                        Please enter the cell phone number you used to create your Curacao credit account.
-                      </p>
-    
-                      <!-- Phone number START -->
-                      <div class="col-12 d-flex justify-content-start">
-                        <div class="input-group has-validation text-start">
-                          <div class="form-floating">
-                            <input type="tel" class="form-control" id="phoneNumber" placeholder="" value="" required>
-                            <label for="phoneNumber" class="form-label">Enter cell phone number</label>
-                            <div class="invalid-feedback">
-                              Enter a valid phone number...
-                            </div>
+    <!-- TCPA Modal END -->
+    <!-- Scenario 001A Modal START -->
+    <div class="modal" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+      <form id="form3" class="row g-0 m-0 needs-validation" novalidate>
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="bg-primary modal-header">
+              <button onclick="window.location.href='/reactivation'" type="button" class="btn-back"
+                aria-label="Back"></button>
+              <img class="credit" src="../img/credit.svg" alt="Curacao | Credit" />
+              <button onclick="window.location.href='/reactivation'" type="button" class="btn-close"
+                aria-label="Close"></button>
+              <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12 text-center">
+                    <h5 id="modal1ZLabel" class="fw-bold mt-3 mb-2">
+                      Let's confirm it's you.
+                    </h5>
+                    <p class="text-muted mb-3">
+                      Please enter the cell phone number you used to create your Curacao credit account.
+                    </p>
+                    <!-- Phone number START -->
+                    <div class="col-12 d-flex justify-content-start">
+                      <div class="input-group has-validation text-start">
+                        <div class="form-floating">
+                          <input type="tel" class="form-control" id="phoneNumber" placeholder="" value="" required>
+                          <label for="phoneNumber" class="form-label">Enter cell phone number</label>
+                          <div class="invalid-feedback">
+                            Enter a valid phone number...
                           </div>
                         </div>
                       </div>
-                      <!-- Phone number END -->
-                      <p class="mt-3 text-muted">New number? <a class="text-info" target="_blank"
-                          href="https://myaccount.icuracao.com/">Update your account.</a></p>
-    
-                      <div class="form-check text-muted text-start mt-3">
-                        <input checked="" class="form-check-input" type="checkbox" value="" id="tcpa" checked>
-                        <label class="ps-2 form-check-label" for="tcpa">
-                          I agree to receive future calls or text messages. Opt-in to Curacao receive important
-                          notifications. <button type="button" data-bs-target="#modalTCPA" data-bs-toggle="modal" class="text-info bg-white border-0 p-0">Read TCPA</button>.
-                        </label>
-                      </div>
+                    </div>
+                    <!-- Phone number END -->
+                    <p class="mt-2 text-muted">New number? <a class="text-info" target="_blank"
+                        href="https://myaccount.icuracao.com/">Update your account.</a></p>
+                    <div class="form-check text-muted text-start mt-3">
+                      <input checked="" class="form-check-input" type="checkbox" value="" id="tcpa" checked>
+                      <label class="ps-2 form-check-label" for="tcpa">
+                        I agree to receive future calls or text messages. Opt-in to Curacao receive important
+                        notifications. <button type="button" data-bs-target="#modalTCPA" data-bs-toggle="modal"
+                          class="link-button">Read TCPA</button>.
+                      </label>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="modal-footer border-0 pt-0">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
-                      <button disabled="" type="button" data-bs-target="#modal002" data-bs-toggle="modal"
-                        class="btn btn-secondary rounded-pill text-white mb-3 mw-btn">
-                        Get a code
-                      </button>
-                    </div>
-                    <div class="col-12 d-flex justify-content-center">
-                      <p class="text-muted mb-2">
-                        We'll send you a verification code via SMS
-                      </p>
-                    </div>
-                    <div class="col-12 d-flex justify-content-center">
-                      <button onclick="window.location.href='/reactivation'" type="button"
-                        class="p-0 bg-white text-info border-0">Cancel and go back</button>
-                      <!-- <button type="button" class="btn btn-light rounded-pill mb-2 mw-btn" data-bs-dismiss="modal">
+            </div>
+            <div class="modal-footer">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-center">
+                    <button disabled="" type="button" data-bs-target="#modal002" data-bs-toggle="modal"
+                      class="btn btn-secondary rounded-pill text-white my-3 mw-btn">
+                      Get a code
+                    </button>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center">
+                    <p class="text-muted">
+                      We'll send you a verification code via SMS
+                    </p>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center">
+                    <button onclick="window.location.href='/reactivation'" type="button" class="link-button mb-3">Cancel
+                      and go back</button>
+                    <!-- <button type="button" class="btn btn-light rounded-pill mw-btn" data-bs-dismiss="modal">
                       No, go back
                     </button> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Scenario 001A Modal END -->
+    <!-- Scenario 002A Modal START -->
+    <div class="modal" id="modal002" tabindex="-1" aria-labelledby="modal002Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <form id="codeForm">
+          <div class="modal-content">
+            <div class="bg-primary modal-header">
+              <button data-bs-target="#modal1" data-bs-toggle="modal" type="button" class="btn-back"
+                aria-label="Back"></button>
+              <img class="credit" src="../img/credit.svg" alt="Curacao | Credit" />
+              <button onclick="window.location.href='/reactivation'" type="button" class="btn-close"
+                aria-label="Close"></button>
+              <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12 text-center">
+                    <h5 class="fw-bold mt-3 mb-2">
+                      Confirm your mobile
+                    </h5>
+                    <p class="text-muted">
+                      Enter the SMS verification code we sent to
+                    </p>
+                    <h6 class="mb-3 fw-bold">(213) 400-7660</h6>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="d-flex justify-content-center">
+                      <input id="codeInput1" class="codeInput" type="tel" maxlength="1" required autofocus>
+                      <input class="codeInput ms-2" type="tel" maxlength="1" required>
+                      <input class="codeInput ms-2" type="tel" maxlength="1" required>
+                      <input class="codeInput ms-2" type="tel" maxlength="1" required>
+                      <input class="codeInput ms-2" type="tel" maxlength="1" required>
+                      <input class="codeInput ms-2" type="tel" maxlength="1" required>
                     </div>
+                  </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="col-12 d-flex justify-content-center">
+                    <button type="button" class="link-button">
+                      Resend SMS code
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-center">
+                    <button id="codeSubmitButton" disabled="" type="button" data-bs-target="#modal1Z"
+                      data-bs-toggle="modal" class="btn btn-secondary rounded-pill text-white my-3 mw-btn">
+                      Continue
+                    </button>
                   </div>
                 </div>
               </div>
@@ -156,131 +212,73 @@
           </div>
         </form>
       </div>
-      <!-- Scenario 001A Modal END -->
-      <!-- Scenario 002A Modal START -->
-      <div class="modal" id="modal002" tabindex="-1" aria-labelledby="modal002Label" aria-hidden="true">
-        <div class="modal-dialog">
-          <form id="codeForm">
-            <div class="modal-content">
-              <div class="bg-primary modal-header">
-                <button data-bs-target="#modal1" data-bs-toggle="modal" type="button" class="btn-back"
-                  aria-label="Back"></button>
-                <img class="credit" src="../img/credit.svg" alt="Curacao | Credit" />
-                <button onclick="window.location.href='/reactivation'" type="button" class="btn-close"
-                  aria-label="Close"></button>
-                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-              </div>
-              <div class="modal-body">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-12 text-center">
-                      <h5 class="fw-bold mb-3 mt-1">
-                        Confirm your mobile
-                      </h5>
-                      <p class="text-muted">
-                        Enter the SMS verification code we sent to
-                      </p>
-                      <h6 class="mb-3 fw-bold">(213) 400-7660</h6>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
-                      <div>
-                        <input id="codeInput1" class="codeInput" type="tel" maxlength="1" required autofocus>
-                        <input class="codeInput" type="tel" maxlength="1" required>
-                        <input class="codeInput" type="tel" maxlength="1" required>
-                        <input class="codeInput" type="tel" maxlength="1" required>
-                        <input class="codeInput" type="tel" maxlength="1" required>
-                        <input class="codeInput" type="tel" maxlength="1" required>
-                      </div>
-                    </div>
-                  </div>
+    </div>
+    <!-- Scenario 002A Modal END -->
+    <!-- Scenario 2A Modal START -->
+    <div class="modal" id="modal1Z" tabindex="-1" aria-labelledby="modal1ZLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="bg-primary modal-header">
+            <button onclick="window.location.href='/reactivation'" type="button" class="btn-back"
+              aria-label="Back"></button>
+            <img class="credit" src="../img/credit.svg" alt="Curacao | Credit" />
+            <button onclick="window.location.href='/reactivation'" type="button" class="btn-close"
+              aria-label="Close"></button>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <h5 id="modal1ZLabel" class="fw-bold mt-3 mb-2">
+                    Hi John Doe,
+                  </h5>
                 </div>
               </div>
-              <div class="modal-footer pt-0 border-0">
-                <div class="container-fluid">
-                  <div class="row mb-3">
-                    <div class="col-12 d-flex justify-content-center">
-                      <button type="button" class="border-0 bg-white p-0 text-info">
-                        Resend SMS code
-                      </button>
+            </div>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <div class="credit-info">
+                    <div class="mb-3">
+                      <img class="h-auto icon w-100" src="../img/error-fix-now-icon.svg" alt="ERROR..." />
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
-                      <button id="codeSubmitButton" disabled="" type="button" data-bs-target="#modal1Z"
-                        data-bs-toggle="modal" class="btn btn-secondary rounded-pill text-white mb-3 mw-btn">
-                        Continue
-                      </button>
-                    </div>
+                    <p class="text-muted">Please contact the Curacao Credit team during business hours at <a href="tel:1(800)990-3422" class="text-info">1 (800) 990-3422</a> or visit any <a href="https://icuracao.com/store-locator" class="text-info">Curacao store</a> for further assistance.</p>
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-          </form>
-        </div>
-      </div>
-      <!-- Scenario 002A Modal END -->
-  
-  <!-- Scenario 6A Modal START -->
-  <div class="modal" id="modal1Z" tabindex="-1" aria-labelledby="modal1ZLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="bg-primary modal-header">
-          <button onclick="window.location.href='/reactivation'" type="button" class="btn-back"
-            aria-label="Back"></button>
-          <img class="credit" src="../img/credit.svg" alt="Curacao | Credit" />
-          <button onclick="window.location.href='/reactivation'" type="button" class="btn-close"
-            aria-label="Close"></button>
-          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-        </div>
-        <div class="modal-body">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-12 text-center">
-                <h5 id="modal1ZLabel" class="fw-bold mb-3 mt-1">
-                  Hi John Doe,
-                </h5>
-              </div>
-            </div>
           </div>
-          <div class="border px-3 px-md-5 py-4 text-center rounded-2">
-            <div class="mb-3">
-              <img class="h-auto icon w-100" src="../img/error-fix-now-icon.svg" alt="ERROR..." />
-            </div>
-            <p class="text-muted">Please contact the Curacao Credit team at <a href="tel:1(800)990-3422" class="text-info">1 (800) 990-3422</a> or visit any <a href="https://icuracao.com/store-locator" class="text-info">Curacao store</a> for further assistance.<br>During business hours.</p>
-            </p>
-          </div>
-        </div>
-        <div class="modal-footer border-0">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-12 text-center">
-                <h5 class="fw-bold mb-3">
-                  Would you like to proceed<br>with Curacao credit?
-                </h5>
+          <div class="modal-footer">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <h5 class="fw-bold mt-3 mb-2">
+                    Would you like to proceed<br>with Curacao credit?
+                  </h5>
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-12 d-flex justify-content-center">
-                <a href="tel:1(800)990-3422" class="btn btn-secondary rounded-pill text-white mb-3 mw-btn">
-                  Call now
-                </a>
-              </div>
-              <div class="col-12 d-flex justify-content-center">
-                <button onclick="window.location.href='/reactivation'" type="button"
-                  class="btn btn-light rounded-pill mb-2 mw-btn">No, go back</button>
-                <!-- <button type="button" class="btn btn-light rounded-pill mb-2 mw-btn" data-bs-dismiss="modal">
+              <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                  <a href="tel:1(800)990-3422" class="btn btn-secondary rounded-pill text-white mb-3 mw-btn">
+                    Call now
+                  </a>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                  <button onclick="window.location.href='/reactivation'" type="button"
+                  class="btn btn-light rounded-pill mb-3 mw-btn">No, go back</button>
+                <!-- <button type="button" class="btn btn-light rounded-pill mw-btn" data-bs-dismiss="modal">
                   No, go back
                 </button> -->
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Scenario 6B Modal END -->
+    <!-- Scenario 2A Modal END -->
   <!-- Scenario 6B Modal START -->
   <div class="modal" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
     <div class="modal-dialog">
@@ -297,7 +295,7 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-12 text-center">
-                <h5 id="modal2Label" class="fw-bold mb-3 mt-1">
+                <h5 id="modal2Label" class="fw-bold mt-3 mb-2">
                   To continue, please review and update your account info.
                 </h5>
               </div>
@@ -305,15 +303,15 @@
           </div>
           <div class="container-fluid">
             <div class="row">
-              <div id="home1" class="col-12 px-0">
-                <div class="container-fluid px-0">
+              <div id="home1" class="col-12">
+                <div class="container-fluid">
                   <div class="row">
                     <div class="col">
                       <h6 class="fw-bold mb-0">Home Address</h6>
                     </div>
                     <div class="col-auto">
                       <button onclick="toggleDisplay(['home1', 'home2'])"
-                        class="text-info p-0 bg-white border-0">Edit</button>
+                        class="link-button">Edit</button>
                     </div>
                   </div>
                 </div>
@@ -323,11 +321,11 @@
                   <span id="form1C"></span><span>, </span><span id="form1D"></span><span> </span><span id="form1E"></span>
                 </p>
               </div>
-              <div id="home2" class="col-12 px-0" style="display: none;">
+              <div id="home2" class="col-12" style="display: none;">
                 <h6 class="fw-bold mb-3">Update your home address</h6>
                 <form id="form1" class="row needs-validation" novalidate>
                   <!-- Address START -->
-                  <div class="col-12 mb-2">
+                  <div class="col-12">
                     <div class="input-group has-validation">
                       <div class="form-floating">
                         <input type="text" class="form-control" id="form1AX" placeholder="" value="" required>
@@ -340,7 +338,7 @@
                   </div>
                   <!-- Address END -->
                   <!-- Apt / Suite # START -->
-                  <div class="col-12 mb-2">
+                  <div class="col-12">
                     <div class="input-group has-validation">
                       <div class="form-floating">
                         <input type="text" class="form-control" id="form1BX" placeholder="" value="" required>
@@ -353,7 +351,7 @@
                   </div>
                   <!-- Apt / Suite # END -->
                   <!-- City START -->
-                  <div class="col-12 mb-2">
+                  <div class="col-12">
                     <div class="input-group has-validation">
                       <div class="form-floating">
                         <input type="text" class="form-control" id="form1CX" placeholder="" value="" required>
@@ -366,7 +364,7 @@
                   </div>
                   <!-- City END -->
                   <!-- State START -->
-                  <div class="col-12 mb-2">
+                  <div class="col-12">
                     <div class="input-group has-validation">
                       <div class="form-floating">
                         <select class="form-select" id="form1DX" required>
@@ -456,8 +454,8 @@
               </div>
             </div>
             <div class="row border-top mt-3 py-3">
-              <div class="col-12 px-0">
-                <div class="container-fluid px-0">
+              <div class="col-12">
+                <div class="container-fluid">
                   <div class="row">
                     <div class="col">
                       <h6 class="fw-bold mb-0 text-light-2">Contact Information</h6>
@@ -473,15 +471,15 @@
               </div>
             </div>
             <div class="row border-top">
-              <div id="work1" class="col-12 px-0">
-                <div class="container-fluid px-0">
+              <div id="work1" class="col-12">
+                <div class="container-fluid">
                   <div class="row mt-3">
                     <div class="col">
                       <h6 class="fw-bold mb-0">Employment Information</h6>
                     </div>
                     <div class="col-auto">
                       <button onclick="toggleDisplay(['work1', 'work2'])"
-                        class="text-info p-0 bg-white border-0">Edit</button>
+                        class="link-button">Edit</button>
                     </div>
                   </div>
                 </div>
@@ -489,11 +487,11 @@
                 <p>Work phone number: <span id="form2B"></span></p>
                 <p>Monthly gross income: <span id="form2C"></span></p>
               </div>
-              <div id="work2" class="border-bottom pb-3 col-12 px-0" style="display: none;">
-                <h6 class="fw-bold my-3">Update your employment information</h6>
+              <div id="work2" class="border-bottom pb-3 col-12" style="display: none;">
+                <h6 class="fw-bold mt-3 mb-2">Update your employment information</h6>
                 <form id="form2" class="row needs-validation" novalidate>
                   <!-- Work company name START -->
-                  <div class="col-12 mb-2">
+                  <div class="col-12">
                     <div class="input-group has-validation">
                       <div class="form-floating">
                         <input type="text" class="form-control" id="form2AX" placeholder="" value="" required>
@@ -506,7 +504,7 @@
                   </div>
                   <!-- Work company name END -->
                   <!-- Work phone number START -->
-                  <div class="col-12 mb-2">
+                  <div class="col-12">
                     <div class="input-group has-validation">
                       <div class="form-floating">
                         <input type="tel" class="form-control" id="form2BX" placeholder="" value="" required>
@@ -545,17 +543,17 @@
             </div>
           </div>
         </div>
-        <div class="modal-footer border-0">
+        <div class="modal-footer">
           <div class="container-fluid">
             <div class="row">
               <div class="col-12 d-flex justify-content-center">
                 <div>
                   <button data-bs-target="#modal3" data-bs-toggle="modal" type="button"
-                    class="btn btn-secondary rounded-pill text-white mb-3 mw-btn">
+                    class="btn btn-secondary rounded-pill text-white my-3 mw-btn">
                     Continue
                   </button>
                   <div>
-                    <p class="mb-0">
+                    <p>
                       <small class="fst-italic text-muted">
                         I'll do it later, <a href="/reactivation/index.html" class="text-info">Continue with Debit/Credit</a>
                       </small>
@@ -587,7 +585,7 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-12 text-center">
-                <h5 id="modal3Label" class="fw-bold mb-3 mt-1">
+                <h5 id="modal3Label" class="fw-bold mt-3 mb-2">
                   Curacao Credit Application Disclosures:
                 </h5>
               </div>
@@ -595,12 +593,12 @@
           </div>
           <div class="container-fluid">
             <div class="row">
-              <div class="col-12 px-0">
-                <div class="container-fluid px-0">
+              <div class="col-12">
+                <div class="container-fluid">
                   <div class="row">
                     <div class="col-12">
                       <div id="terms">
-                        <p class="mb-0">
+                        <p>
                           By accepting these Terms and Conditions through your use of the Site, you certify that you are
                           18 years of age or older. If you are under the age of 18 but at least 13 years of age you may
                           use this Site only under the supervision of a parent or legal guardian who agrees to be bound
@@ -647,17 +645,17 @@
             </div>
           </div>
         </div>
-        <div class="modal-footer pt-0 border-0">
+        <div class="modal-footer">
           <div class="container-fluid">
             <div class="row">
               <div class="col-12 d-flex justify-content-center">
                 <div>
                   <button onclick="window.location.href='/reactivation'" type="button"
-                    class="btn btn-secondary rounded-pill text-white mb-3 mw-btn">
+                    class="btn btn-secondary rounded-pill text-white my-3 mw-btn">
                     Accept and Submit
                   </button>
                   <div>
-                    <p class="mb-0">
+                    <p>
                       <small class="fst-italic text-muted">
                         I'll do it later, <a href="/reactivation/index.html" class="text-info">Continue with Debit/Credit</a>
                       </small>
